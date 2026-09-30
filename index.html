@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QueueFlow — Digital Queue Concept</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-one"></div>
+    <div class="bg-orb orb-two"></div>
+
+    <header class="navbar">
+      <a class="brand" href="#home" data-view-link="home">
+        <span class="brand-mark">Q</span>
+        <span>Queue<span>Flow</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#how-it-works" data-scroll-link="how-it-works">How It Works</a>
+        <a href="#institutions" data-scroll-link="institutions"
+          >For Institutions</a
+        >
+        <a href="#demo" data-view-link="demo">Demo</a>
+      </nav>
+
+      <button class="nav-cta" id="navJoinBtn">Join a Queue</button>
+      <button class="mobile-menu" id="mobileMenuBtn" aria-label="Open menu">
+        ☰
+      </button>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section class="page-section hero" id="home">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="pulse-dot"></span> Concept prototype
+          </div>
+          <h1>Your time matters.<br /><span>Your queue shouldn't.</span></h1>
+          <p>
+            Join queues digitally, track your position, and know when it's
+            almost your turn.
+          </p>
+
+          <div class="hero-actions">
+            <button class="primary-btn" id="heroJoinBtn">
+              Join a Queue <span>→</span>
+            </button>
+            <a class="secondary-btn" href="#how-it-works">See How It Works</a>
+          </div>
+
+          <div class="mini-trust">
+            <span>Designed for everyday waiting</span>
+            <span class="mini-dot"></span>
+            <span>University-first concept</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="queue-glass-card">
+            <div class="card-topline">
+              <div>
+                <span class="muted-label">University Administration</span>
+                <strong>Document Verification</strong>
+              </div>
+              <span class="live-pill"><i></i> LIVE</span>
+            </div>
+
+            <div class="now-serving">
+              <div>
+                <span class="muted-label">Now serving</span>
+                <div class="big-token">A-103</div>
+              </div>
+              <div class="next-box">
+                <span class="muted-label">Next</span>
+                <strong>A-104</strong>
+              </div>
+            </div>
+
+            <div class="your-token">
+              <div>
+                <span class="muted-label">Your token</span>
+                <strong id="heroToken">A-108</strong>
+              </div>
+              <div class="hero-wait">
+                <span>4 people ahead</span>
+                <strong>~20 min</strong>
+              </div>
+            </div>
+
+            <div class="queue-line">
+              <span class="queue-step active">103</span>
+              <span class="queue-connector filled"></span>
+              <span class="queue-step active">104</span>
+              <span class="queue-connector filled"></span>
+              <span class="queue-step">105</span>
+              <span class="queue-connector"></span>
+              <span class="queue-step">106</span>
+              <span class="queue-connector"></span>
+              <span class="queue-step user-step">108</span>
+            </div>
+
+            <div class="card-footer-note">
+              <span class="spark">✦</span>
+              You'll be notified when your turn is near.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="page-section content-section" id="how-it-works">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Simple by design</span>
+          <h2>Waiting becomes <span>predictable.</span></h2>
+          <p>
+            Instead of standing around and guessing, people can see where they
+            are in the queue and return when their turn is close.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-number">01</div>
+            <div class="step-icon">⌖</div>
+            <h3>Choose a service</h3>
+            <p>Select the institution, department, and service you need.</p>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-number">02</div>
+            <div class="step-icon">#</div>
+            <h3>Get your token</h3>
+            <p>
+              Receive a digital token and join the queue without standing in
+              line.
+            </p>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-number">03</div>
+            <div class="step-icon">◷</div>
+            <h3>Track your position</h3>
+            <p>
+              See the current token, people ahead, and estimated waiting time.
+            </p>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-number">04</div>
+            <div class="step-icon">✓</div>
+            <h3>Arrive when needed</h3>
+            <p>
+              Get a simulated alert when your turn is approaching or arrives.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- INSTITUTIONS -->
+      <section
+        class="page-section content-section institutions-section"
+        id="institutions"
+      >
+        <div class="section-heading reveal">
+          <span class="eyebrow">For institutions</span>
+          <h2>One queue. <span>Less confusion.</span></h2>
+          <p>
+            The institution controls the queue from a simple staff dashboard
+            while visitors get a clear view of their own position.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-card reveal">
+            <span class="benefit-icon">↘</span>
+            <h3>Reduce crowding</h3>
+            <p>
+              Manage queues more efficiently and reduce unnecessary waiting
+              around service counters.
+            </p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-icon">◎</span>
+            <h3>Improve experience</h3>
+            <p>
+              People know their position instead of waiting without information.
+            </p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-icon">▦</span>
+            <h3>Help staff</h3>
+            <p>
+              Staff can see the queue, serve the next person, and keep services
+              organized.
+            </p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-icon">⌁</span>
+            <h3>Useful data</h3>
+            <p>
+              Queue statistics can show busy periods and average service times.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- DEMO -->
+      <section class="page-section demo-section" id="demo">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Interactive prototype</span>
+          <h2>See the queue <span>in action.</span></h2>
+          <p>
+            This is a local simulation. No real institution or account is
+            connected.
+          </p>
+        </div>
+
+        <div class="demo-switcher">
+          <button class="switch-btn active" data-demo-tab="user">
+            Student View
+          </button>
+          <button class="switch-btn" data-demo-tab="staff">Staff View</button>
+        </div>
+
+        <!-- USER VIEW -->
+        <div class="demo-panel user-panel active" id="userPanel">
+          <div class="demo-card service-picker reveal">
+            <div class="panel-heading">
+              <div>
+                <span class="eyebrow">Step 1</span>
+                <h3>Join a queue</h3>
+              </div>
+              <span class="demo-badge">DEMO</span>
+            </div>
+
+            <label for="institutionSelect">Institution</label>
+            <select id="institutionSelect">
+              <option value="University Administration">
+                University Administration
+              </option>
+              <option value="Admissions Office">Admissions Office</option>
+              <option value="Examination Section">Examination Section</option>
+              <option value="Finance Office">Finance Office</option>
+              <option value="Student Affairs">Student Affairs</option>
+            </select>
+
+            <label for="serviceSelect">Service</label>
+            <select id="serviceSelect">
+              <option>Document Verification</option>
+              <option>Fee / Payment Inquiry</option>
+              <option>Student Records</option>
+              <option>General Information</option>
+            </select>
+
+            <button class="primary-btn full-btn" id="joinQueueBtn">
+              Join Queue <span>→</span>
+            </button>
+          </div>
+
+          <div class="demo-card queue-status-card reveal" id="queueStatusCard">
+            <div class="status-top">
+              <div>
+                <span class="eyebrow">Your queue</span>
+                <h3 id="statusInstitution">University Administration</h3>
+                <p id="statusService">Document Verification</p>
+              </div>
+              <span class="status-pill waiting" id="statusPill">Waiting</span>
+            </div>
+
+            <div class="token-layout">
+              <div class="token-main">
+                <span class="muted-label">Your token</span>
+                <strong id="userToken">—</strong>
+                <span class="token-sub" id="userStatusText"
+                  >Join a queue to receive your token.</span
+                >
+              </div>
+
+              <div class="wait-stat">
+                <span class="muted-label">Estimated wait</span>
+                <strong id="estimatedWait">—</strong>
+              </div>
+            </div>
+
+            <div class="queue-stats">
+              <div>
+                <span class="muted-label">Currently serving</span>
+                <strong id="currentServing">A-103</strong>
+              </div>
+              <div>
+                <span class="muted-label">People ahead</span>
+                <strong id="peopleAhead">—</strong>
+              </div>
+            </div>
+
+            <div class="progress-area">
+              <div class="progress-label">
+                <span>Queue progress</span>
+                <strong id="progressPercent">0%</strong>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" id="progressBar"></div>
+              </div>
+            </div>
+
+            <div class="queue-visual" id="queueVisual"></div>
+
+            <div class="status-actions">
+              <button class="ghost-btn" id="leaveQueueBtn">Leave Queue</button>
+              <button class="primary-btn small-btn" id="userServeDemoBtn">
+                Simulate Next →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- STAFF VIEW -->
+        <div class="demo-panel staff-panel" id="staffPanel">
+          <div class="staff-dashboard">
+            <aside class="staff-sidebar">
+              <div class="sidebar-brand">
+                <span class="brand-mark">Q</span><strong>QueueFlow</strong>
+              </div>
+              <div class="sidebar-links">
+                <button class="side-link active">
+                  ▦ <span>Dashboard</span>
+                </button>
+                <button class="side-link">≡ <span>Queues</span></button>
+                <button class="side-link">◇ <span>Services</span></button>
+                <button class="side-link">⌁ <span>Analytics</span></button>
+                <button class="side-link">⚙ <span>Settings</span></button>
+              </div>
+              <div class="sidebar-bottom">
+                <span class="concept-tag">CONCEPT PROTOTYPE</span>
+              </div>
+            </aside>
+
+            <div class="staff-main">
+              <div class="staff-header">
+                <div>
+                  <span class="eyebrow">Staff dashboard</span>
+                  <h3>Administration Office</h3>
+                </div>
+                <span class="open-status"><i></i> OPEN</span>
+              </div>
+
+              <div class="stat-grid">
+                <div class="stat-card">
+                  <span>Currently serving</span>
+                  <strong id="staffCurrent">A-103</strong>
+                  <small>Document Verification</small>
+                </div>
+                <div class="stat-card">
+                  <span>Next</span>
+                  <strong id="staffNext">A-104</strong>
+                  <small>Waiting</small>
+                </div>
+                <div class="stat-card">
+                  <span>Waiting</span>
+                  <strong id="staffWaiting">12</strong>
+                  <small>People in queue</small>
+                </div>
+                <div class="stat-card">
+                  <span>Average service</span>
+                  <strong>~5 min</strong>
+                  <small>Based on demo data</small>
+                </div>
+              </div>
+
+              <div class="staff-content-grid">
+                <div class="table-card">
+                  <div class="table-heading">
+                    <div>
+                      <span class="eyebrow">Live queue</span>
+                      <h4>People waiting</h4>
+                    </div>
+                    <button class="primary-btn small-btn" id="staffServeBtn">
+                      Serve Next →
+                    </button>
+                  </div>
+
+                  <div class="queue-table">
+                    <div class="table-row table-head">
+                      <span>Token</span><span>Service</span><span>Status</span
+                      ><span>Action</span>
+                    </div>
+                    <div id="staffQueueRows"></div>
+                  </div>
+                </div>
+
+                <div class="activity-card">
+                  <span class="eyebrow">Today's overview</span>
+                  <h4>Queue activity</h4>
+                  <div class="chart" id="chart">
+                    <span style="height: 35%"></span>
+                    <span style="height: 48%"></span>
+                    <span style="height: 42%"></span>
+                    <span style="height: 65%"></span>
+                    <span style="height: 52%"></span>
+                    <span style="height: 78%"></span>
+                    <span style="height: 62%"></span>
+                    <span style="height: 86%"></span>
+                    <span style="height: 70%"></span>
+                    <span style="height: 92%"></span>
+                    <span style="height: 73%"></span>
+                    <span style="height: 58%"></span>
+                  </div>
+                  <div class="chart-labels">
+                    <span>9 AM</span><span>12 PM</span><span>3 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wait-explanation reveal">
+          <div class="formula-icon">≈</div>
+          <div>
+            <strong>How is the estimated wait calculated?</strong>
+            <p>
+              People ahead × average service time ≈ estimated wait. It is an
+              estimate and can change as the queue moves.
+            </p>
+          </div>
+          <div class="formula-example">
+            <span>4 people</span><b>×</b><span>5 min</span><b>=</b
+            ><strong>~20 min</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <span class="brand-mark">Q</span><strong>QueueFlow</strong>
+      </div>
+      <span>Making waiting more predictable.</span>
+      <span>Concept prototype for an entrepreneurship project.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
